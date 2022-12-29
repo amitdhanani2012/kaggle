@@ -20,7 +20,8 @@ def amit(fourier_data, theoretical_stdev=None):
     if theoretical_stdev is not None:
         x = np.linspace(-4 * theoretical_stdev, 4 * theoretical_stdev, 1000)
         y = stats.norm(scale=theoretical_stdev).pdf(x)
-        print(x,y)
+        print(x)
+        print(y)
 
 
     ax.legend()
